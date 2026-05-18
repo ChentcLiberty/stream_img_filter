@@ -1,0 +1,18 @@
+# VCS / Verilog build artifacts
+AN.DB/
+csrc/
+simv
+simv_*
+*.daidir/
+ucli.key
+*.vpd
+*.vcd
+*.fsdb
+*.log
+*.jou
+*.so
+*.o
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
