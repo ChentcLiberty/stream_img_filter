@@ -72,3 +72,13 @@ The main implementation target today is the simple, debug-friendly configuration
 - add randomized or software-reference checking beyond the deterministic regression
 - pipeline the MAC-heavy path to reduce timing pressure
 - revisit `MEM_DWTH` and memory organization for better PPA
+
+## Open-Source References
+
+I reviewed a short list of related open-source projects and wrote down what is realistically reusable for this repository in [docs/open_source_reuse.md](docs/open_source_reuse.md).
+
+The short version is:
+
+- no public repo I found matches this exact `IMG_FILTER` interface closely enough for drop-in reuse
+- utility modules and verification ideas are reusable
+- larger image-processing repos are better treated as architecture references than as copy-paste sources
