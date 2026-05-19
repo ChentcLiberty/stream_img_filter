@@ -34,6 +34,7 @@ Run from repository root:
 bash tb/run_vcs_img_filter_regression.sh smoke
 bash tb/run_vcs_img_filter_regression.sh directed
 bash tb/run_vcs_img_filter_regression.sh regression
+CASE_ID=1 bash uvm/run_vcs_img_filter_uvm.sh
 python3 tools/img_filter_ref.py regression
 ```
 
@@ -55,6 +56,9 @@ Covered cases include:
 The Python reference model in `tools/img_filter_ref.py` mirrors the deterministic
 Verilog regression rules and can also dump portable `.hex` vectors. See
 [docs/reference_model.md](docs/reference_model.md).
+
+The repository also now includes a first-pass UVM environment under `uvm/`.
+See [docs/uvm_verification.md](docs/uvm_verification.md).
 
 ## Implementation Notes
 
