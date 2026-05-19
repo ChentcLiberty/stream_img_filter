@@ -34,6 +34,7 @@ Run from repository root:
 bash tb/run_vcs_img_filter_regression.sh smoke
 bash tb/run_vcs_img_filter_regression.sh directed
 bash tb/run_vcs_img_filter_regression.sh regression
+python3 tools/img_filter_ref.py regression
 ```
 
 Each mode uses its own `/tmp` build directory, so repeated runs do not clobber one another.
@@ -50,6 +51,10 @@ Covered cases include:
 - width not divisible by `4`
 - mirror-boundary handling
 - ring-buffer wrap stress at `height=64, blk_v=49`
+
+The Python reference model in `tools/img_filter_ref.py` mirrors the deterministic
+Verilog regression rules and can also dump portable `.hex` vectors. See
+[docs/reference_model.md](docs/reference_model.md).
 
 ## Implementation Notes
 
